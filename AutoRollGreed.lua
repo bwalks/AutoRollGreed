@@ -35,6 +35,11 @@ local function onEvent(self, event, arg1, ...)
             autoRollGreedEnabled = true
         end
     else
+       if not autoRollGreedEnabled then
+          return
+       end
+       
+        -- for START_LOOT_ROLL, arg1 is the roll ID
         texture, name, count, quality, bindOnPickUp, canNeed, canGreed = GetLootRollItemInfo(arg1)
         if(quality <= 2 and canGreed) then
             RollOnLoot(arg1, 2)
