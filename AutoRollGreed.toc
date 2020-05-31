@@ -1,0 +1,9 @@
+## Interface: 11302
+## Title: AutoRollGreed
+## Version: 1.0.0
+## Author: bwalks
+## Notes: Automatically rolls greed on all uncommon items.
+## DefaultState: enabled
+## SavedVariables: autoRollGreedEnabled
+
+AutoRollGreed.lua
